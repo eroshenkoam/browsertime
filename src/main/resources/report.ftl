@@ -12,7 +12,7 @@
             <h1>Browsertime Report</h1>
 
             <p class="lead">${report.info.url}</p>
-            <table class="table table-bordered table-dark">
+            <table class="table table-striped table-bordered table-dark">
                 <thead>
                 <tr>
                     <th scope="col">Name</th>
