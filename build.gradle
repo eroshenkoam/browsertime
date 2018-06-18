@@ -1,0 +1,31 @@
+apply plugin: 'java'
+
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+    options.encoding = 'UTF-8'
+}
+
+compileTestJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+    options.encoding = 'UTF-8'
+    options.compilerArgs += "-parameters"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.0'
+
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.9.5'
+    compile 'org.freemarker:freemarker:2.3.28'
+}
+
+task report(type:JavaExec) {
+    main = "io.eroshenkoam.browsertime.BuildReport"
+    args = [browsertimeFile, reportFile]
+    classpath = sourceSets.main.runtimeClasspath
+}
