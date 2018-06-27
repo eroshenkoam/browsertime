@@ -26,6 +26,6 @@ dependencies {
 
 task report(type:JavaExec) {
     main = "io.eroshenkoam.browsertime.BuildReport"
-    args = [browsertimeFile, reportFile]
+    args = [browsertimeFile, coachFile, reportFile]
     classpath = sourceSets.main.runtimeClasspath
 }
