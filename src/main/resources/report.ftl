@@ -53,21 +53,6 @@
                     <@rowStatistic name="DOM Interactive" data=report.statistics.timings.navigationTiming.domInteractive />
                     <@rowStatistic name="DOM Content Loaded Event Start" data=report.statistics.timings.navigationTiming.domContentLoadedEventStart />
 
-                    <@rowGroup name="Navigation Timing"/>
-                    <@rowStatistic name="Connect Start" data=report.statistics.timings.navigationTiming.connectStart />
-                    <@rowStatistic name="Worker Start" data=report.statistics.timings.navigationTiming.workerStart />
-                    <@rowStatistic name="Load Event Start" data=report.statistics.timings.navigationTiming.loadEventStart />
-                    <@rowStatistic name="Load Event End" data=report.statistics.timings.navigationTiming.loadEventEnd />
-                    <@rowStatistic name="DOM Interactive" data=report.statistics.timings.navigationTiming.domInteractive />
-                    <@rowStatistic name="DOM Content Loaded Event Start" data=report.statistics.timings.navigationTiming.domContentLoadedEventStart />
-                    <@rowStatistic name="DOM Content Loaded Event End" data=report.statistics.timings.navigationTiming.domContentLoadedEventEnd />
-                    <@rowStatistic name="DOM Complete" data=report.statistics.timings.navigationTiming.domComplete />
-                    <@rowStatistic name="Domain Lookup Start" data=report.statistics.timings.navigationTiming.domainLookupStart />
-                    <@rowStatistic name="Domain Lookup End" data=report.statistics.timings.navigationTiming.domainLookupEnd />
-                    <@rowStatistic name="Unload Event Start" data=report.statistics.timings.navigationTiming.unloadEventStart />
-                    <@rowStatistic name="Unload EVent End" data=report.statistics.timings.navigationTiming.unloadEventEnd />
-
-
                     <@rowGroup name="Page Info"/>
                     <@rowStatistic name="Document Width" data=report.statistics.pageinfo.documentWidth />
                     <@rowStatistic name="Document Height" data=report.statistics.pageinfo.documentHeight />
