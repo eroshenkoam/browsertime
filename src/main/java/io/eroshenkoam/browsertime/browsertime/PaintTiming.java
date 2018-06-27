@@ -1,4 +1,4 @@
-package io.eroshenkoam.browsertime.entity;
+package io.eroshenkoam.browsertime.browsertime;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

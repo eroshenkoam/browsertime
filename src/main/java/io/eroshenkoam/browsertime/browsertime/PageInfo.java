@@ -1,4 +1,4 @@
-package io.eroshenkoam.browsertime.entity;
+package io.eroshenkoam.browsertime.browsertime;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
@@ -7,12 +7,10 @@ import lombok.experimental.Accessors;
 @Data
 @Accessors(chain = true)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Statistics {
+public class PageInfo {
 
-    private PageInfo pageinfo;
-
-    private Timings timings;
-
-    private VisualMetrics visualMetrics;
+    private Statistic documentHeight;
+    private DocumentSize documentSize;
+    private Statistic documentWidth;
 
 }

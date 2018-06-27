@@ -2,17 +2,13 @@ package io.eroshenkoam.browsertime;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import freemarker.cache.ClassTemplateLoader;
-import freemarker.cache.TemplateLoader;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
-import io.eroshenkoam.browsertime.entity.Report;
+import io.eroshenkoam.browsertime.browsertime.BrowsertimeReport;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.io.Reader;
 import java.io.Writer;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -29,7 +25,7 @@ public class BuildReport {
         final File browserTimeFile = getBrowserTimeFile(args).map(File::new)
                 .orElseThrow(() -> new RuntimeException("Can't find browsertime file"));
 
-        final Report report = mapper.readValue(browserTimeFile, Report.class);
+        final BrowsertimeReport browsertime = mapper.readValue(browserTimeFile, BrowsertimeReport.class);
 
         final Configuration cfg = new Configuration(Configuration.VERSION_2_3_28);
         cfg.setTemplateLoader(new ClassTemplateLoader(BuildReport.class, "/"));
@@ -37,7 +33,7 @@ public class BuildReport {
 
         // Build the data-model
         Map<String, Object> data = new HashMap<>();
-        data.put("report", report);
+        data.put("browsertime", browsertime);
 
         final Path reportFile = getReportFile(args).map(Paths::get)
                 .orElseThrow(() -> new RuntimeException("Report file mising"));

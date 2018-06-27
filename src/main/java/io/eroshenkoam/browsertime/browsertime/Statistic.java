@@ -1,4 +1,4 @@
-package io.eroshenkoam.browsertime.entity;
+package io.eroshenkoam.browsertime.browsertime;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
