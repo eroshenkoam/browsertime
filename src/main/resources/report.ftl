@@ -57,6 +57,22 @@
                         </tr>
                         </thead>
                         <tbody>
+                    <@rowGroup name="Page Timings"/>
+                    <@rowStatistic name="Backend Time" data=browsertime.statistics.timings.pageTimings.backEndTime/>
+                    <@rowStatistic name="Frontent Time" data=browsertime.statistics.timings.pageTimings.frontEndTime/>
+                    <@rowStatistic name="Page Load Time" data=browsertime.statistics.timings.pageTimings.pageLoadTime/>
+                    <@rowStatistic name="Domain Lookup Time" data=browsertime.statistics.timings.pageTimings.domainLookupTime/>
+                    <@rowStatistic name="Page Load Time" data=browsertime.statistics.timings.pageTimings.pageDownloadTime/>
+                    <@rowStatistic name="Server Conntenction Time" data=browsertime.statistics.timings.pageTimings.serverConnectionTime/>
+                    <@rowStatistic name="Server Response Time" data=browsertime.statistics.timings.pageTimings.serverResponseTime/>
+                    <@rowStatistic name="DOM Content Loaded Time" data=browsertime.statistics.timings.pageTimings.domContentLoadedTime/>
+                    <@rowStatistic name="DOM Interactive Time" data=browsertime.statistics.timings.pageTimings.domInteractiveTime/>
+
+                    <@rowGroup name="Timings"/>
+                    <@rowStatistic name="RUM Speed Index" data=browsertime.statistics.timings.rumSpeedIndex />
+                    <@rowStatistic name="First Paint" data=browsertime.statistics.timings.firstPaint />
+                    <@rowStatistic name="Fully Load" data=browsertime.statistics.timings.fullyLoaded />
+
                     <@rowGroup name="Visual Metrics"/>
                     <@rowStatistic name="Speed Index" data=browsertime.statistics.visualMetrics.speedIndex />
                     <@rowStatistic name="Perceptual Speed Index" data=browsertime.statistics.visualMetrics.perceptualSpeedIndex />
@@ -66,11 +82,6 @@
                     <@rowStatistic name="Visual Complete 85" data=browsertime.statistics.visualMetrics.visualComplete85 />
                     <@rowStatistic name="Visual Complete 95" data=browsertime.statistics.visualMetrics.visualComplete95 />
                     <@rowStatistic name="Visual Complete 99" data=browsertime.statistics.visualMetrics.visualComplete99 />
-
-                    <@rowGroup name="Timings"/>
-                    <@rowStatistic name="RUM Speed Index" data=browsertime.statistics.timings.rumSpeedIndex />
-                    <@rowStatistic name="First Paint" data=browsertime.statistics.timings.firstPaint />
-                    <@rowStatistic name="Fully Load" data=browsertime.statistics.timings.fullyLoaded />
 
                     <@rowGroup name="Visual Timing"/>
                     <@rowStatistic name="Worker Start" data=browsertime.statistics.timings.navigationTiming.workerStart />
