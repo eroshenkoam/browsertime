@@ -62,7 +62,7 @@
                     <@rowStatistic name="Frontent Time" data=browsertime.statistics.timings.pageTimings.frontEndTime/>
                     <@rowStatistic name="Page Load Time" data=browsertime.statistics.timings.pageTimings.pageLoadTime/>
                     <@rowStatistic name="Domain Lookup Time" data=browsertime.statistics.timings.pageTimings.domainLookupTime/>
-                    <@rowStatistic name="Page Load Time" data=browsertime.statistics.timings.pageTimings.pageDownloadTime/>
+                    <@rowStatistic name="Page Download Time" data=browsertime.statistics.timings.pageTimings.pageDownloadTime/>
                     <@rowStatistic name="Server Conntenction Time" data=browsertime.statistics.timings.pageTimings.serverConnectionTime/>
                     <@rowStatistic name="Server Response Time" data=browsertime.statistics.timings.pageTimings.serverResponseTime/>
                     <@rowStatistic name="DOM Content Loaded Time" data=browsertime.statistics.timings.pageTimings.domContentLoadedTime/>
@@ -88,7 +88,6 @@
                     <@rowStatistic name="Load Event Start" data=browsertime.statistics.timings.navigationTiming.loadEventStart />
                     <@rowStatistic name="Load Event End" data=browsertime.statistics.timings.navigationTiming.loadEventEnd />
                     <@rowStatistic name="DOM Interactive" data=browsertime.statistics.timings.navigationTiming.domInteractive />
-                    <@rowStatistic name="DOM Content Loaded Event Start" data=browsertime.statistics.timings.navigationTiming.domContentLoadedEventStart />
 
                     <@rowGroup name="Page Info"/>
                     <@rowStatistic name="Document Width" data=browsertime.statistics.pageinfo.documentWidth />
