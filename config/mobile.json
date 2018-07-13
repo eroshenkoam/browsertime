@@ -1,0 +1,7 @@
+{
+  "chrome": {
+    "mobileEmulation": {
+      "deviceName": "iPhone X"
+    }
+  }
+}
